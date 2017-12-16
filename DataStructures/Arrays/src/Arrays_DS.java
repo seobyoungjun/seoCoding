@@ -1,9 +1,9 @@
+//https://www.hackerrank.com/challenges/arrays-ds/problem
 import java.io.*;
 import java.util.*;
 import java.text.*;
 import java.math.*;
 import java.util.regex.*;
-//https://www.hackerrank.com/challenges/arrays-ds/problem
 public class Arrays_DS {
 
     public static void main(String[] args) {
