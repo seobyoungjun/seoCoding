@@ -27,4 +27,9 @@ https://guides.github.com/features/mastering-markdown/
        ```  
   *  N개의 리스트를 생성하고 Q개의 쿼리만큼 시행하기 때문에 시간복자바도 **O(N)**
   *  https://github.com/seobyoungjun/seoCoding/blob/master/DataStructures/Arrays/src/Dynamic_Array.java
+> ### Linked Lists
+*  Print the Elements of a Linked List
 
+*  Insert a Node at the Tail of a Linked List
+
+*  Insert a node at the head of a linked list
