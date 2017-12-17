@@ -1,6 +1,6 @@
-#HackerRank
-##DataStructure
-###Arrays
+# HackerRank
+## DataStructure
+### Arrays
 * Arrays_DS
   * 입력받은 값을 배열에 저장해 역순으로 출력하기.
   * 배열의 N-1부터 0번째 인덱스 까지 출력함으로 시간복잡도 O(N).
