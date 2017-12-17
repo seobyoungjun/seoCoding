@@ -29,7 +29,7 @@ https://guides.github.com/features/mastering-markdown/
   *  https://github.com/seobyoungjun/seoCoding/blob/master/DataStructures/Arrays/src/Dynamic_Array.java
 > ### Linked Lists
 *  Print the Elements of a Linked List
-```
+```{.java}
 void Print(Node head) {
    if(head != null){
       System.out.println(head.data);
@@ -39,7 +39,7 @@ void Print(Node head) {
 ```
   
 *  Insert a Node at the Tail of a Linked List
-```
+```{.java}
   Node Insert(Node head,int data) {
     Node tmp = new Node();
     tmp.data = data;
@@ -58,7 +58,7 @@ void Print(Node head) {
 }
 ```
 *  Insert a node at the head of a linked list
-```
+```{.java}
     Node Insert(Node head,int x) {
     Node node = new Node();
     node.data = x;
