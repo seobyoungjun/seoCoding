@@ -104,11 +104,11 @@ void inOrder(Node root) {
 > ### Stack
 * Maximum Element
   * You have an empty sequence, and you will be given  queries. Each query is one of these three types:
-    *  ```
-      1 x  -Push the element x into the stack.
-      2    -Delete the element present at the top of the stack.
-      3    -Print the maximum element in the stack.
-      ```
+    ```
+    1 x  -Push the element x into the stack.
+    2    -Delete the element present at the top of the stack.
+    3    -Print the maximum element in the stack.
+    ```
   * Max값을 찾을때 timeOut발생 -> Max값이 있는 index를 따로 저장해둔다 -> Max값이 Pop되는 최악의 경우가 발생할 수 있다.
   * 시간복잡도 : (add일 경우) log(1) + (pop일 경우 최선의 경우) log(1) + (pop일 경우 최악의 경우) log(n) = log(n) 
   * Link: https://github.com/seobyoungjun/seoCoding/blob/master/DataStructures/Stacks/src/MaximumElement.java
