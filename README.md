@@ -119,14 +119,22 @@ void inOrder(Node root) {
   * 예외처리 중요!! (Stack이 남아있으면 매칭이 안된거 이므로 Stack의 사이즈를 마지막에 꼭 확인!)
   * 시간복잡도 : log(n)
   * Link: https://github.com/seobyoungjun/seoCoding/blob/master/DataStructures/Stacks/src/BalancedBrackets.java
-> ### Queue
 * Equal Stacks
   * 3개의 Stack이 주어지는데, 각 스택별로 입력되는 값들이 다르다.
   * Stack의 총 합이 같아질때까지 pop을 해가면서 진행하는 알고리즘을 작성.
   * while문의 사용이 헷갈렸으니 유의.
   * 시간복잡도 : (스택 3개의 값 입력) log(n) + (같을때 까지 비교하기 위한 while문) log(n) = log(n)
   * Link: https://github.com/seobyoungjun/seoCoding/blob/master/DataStructures/Stacks/src/EqualStacks.java
+> ### Queue
+* Queue Using Two Stacks
+  * FIFO방식으로 3가지의 쿼리문으로 실행시키는 알고리즘
+   ```
+   1 x: Enqueue element  into the end of the queue.
+   2: Dequeue the element at the front of the queue.
+   3: Print the element at the front of the queue.
+   ```
+  * Link: https://github.com/seobyoungjun/seoCoding/blob/master/DataStructures/Queues/src/QueueUsingTwoStacks.java
 * Castle On The Grid
   * 'X'는 지니갈 수 없는 성, '.'은 지나갈 수 있는 성으로 2차원 배열에서 시작점에서 목표점까지 최소 몇번의 과정으로 갈 수 있는지를 구하는 알고리즘
   * 재귀함수로 돌려서 구하려고 했지만 실패...
-  * 
+  * Link: https://github.com/seobyoungjun/seoCoding/blob/master/DataStructures/Queues/src/CastleOnTheGrid.java
