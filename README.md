@@ -138,3 +138,19 @@ void inOrder(Node root) {
   * 'X'는 지니갈 수 없는 성, '.'은 지나갈 수 있는 성으로 2차원 배열에서 시작점에서 목표점까지 최소 몇번의 과정으로 갈 수 있는지를 구하는 알고리즘
   * 재귀함수로 돌려서 구하려고 했지만 실패...
   * Link: https://github.com/seobyoungjun/seoCoding/blob/master/DataStructures/Queues/src/CastleOnTheGrid.java
+> ### Heap
+* QHEAP1
+  ```
+  1. "1 v" - v를 heap에 add
+  2. "2 v" - v를 heap에서 delete
+  3. "3"   - heap안의 최소값을 출력
+  ```
+  * 범했던 오류 : 삭제 시 삭제할 값과 최소값이 일치했을 때만 삭제하고 최소값을 찾는 알고리즘으로 구현하여, 최소값과 삭제하려는 값이 일치하지 않으면 삭제를 안해줬다.
+  * 시간복잡도 : (삭제 연산)log(n) + (최소값 삭제할 시)log(n) = log(n)
+* Jesse and Cookies
+  * 연산식 Sweatness = (1*1st cookie) + (2*2nd cookie)
+  * N개의 쿠키들의 첫번째와 두번째의 쿠키들을 식을 이용한다음 나온 쿠키를 적절한 위치에 놓은다음 모든 쿠키들이 당도 K보다 모두 클때까지 연산의 수를 구하는 알고리즘
+  * 범했던 오류 : 배열을 사용했을 시에 쿠키1과 쿠키2의 식을 이용해 값을 쿠키2에 넣어주고 오름차순 정렬을 한다음 다시 쿠키2와 쿠키3을 식을 이용해 쿠키3에 넣어주고 오름차순 하고... -> 시간 딜레이 및 알고리즘 오류
+  * Priority Queue를 사용하여 해결 (Priority Queue는 Queue에 값 삽입시 제일 작은 값들을 poll할 수 있게 정렬해줌.)
+  * 시간복잡도 : (enqueue경우)log(n) + (dequeue경우)log(1) = log(n)
+  * Link: 

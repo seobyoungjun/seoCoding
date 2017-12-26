@@ -1,0 +1,38 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class JesseAandCookies {
+	static int opCount = 0;
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int N = in.nextInt();
+		int K = in.nextInt();
+		int[] array = new int[N];
+		for (int i = 0; i < N; i++)
+			array[i] = in.nextInt();
+		Arrays.sort(array);
+		for(opCount=0; opCount<array.length; opCount++){
+			if(array[opCount] < K){
+				opCount--;
+				break;
+			}else if(mix(array, opCount) < K){
+				opCount++;
+				break;
+			}
+		}
+		if (opCount != array.length)
+			System.out.println(opCount + 1);
+		else
+			System.out.println(-1);
+	}
+
+	public static int mix(int[] array, int opCount) {
+
+		array[opCount + 1] = (array[opCount] * 1) + (array[opCount + 1] * 2);
+		array[opCount] = 0;
+		Arrays.sort(array);
+		return array[opCount + 1];
+
+	}
+}
