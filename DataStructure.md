@@ -27,6 +27,7 @@ https://guides.github.com/features/mastering-markdown/
        ```  
   *  N개의 리스트를 생성하고 Q개의 쿼리만큼 시행하기 때문에 시간복자바도 **O(N)**
   *  Link: https://github.com/seobyoungjun/seoCoding/blob/master/DataStructures/Arrays/src/Dynamic_Array.java
+---
 > ### Linked Lists
 *  Print the Elements of a Linked List
 ```{.java}
@@ -70,6 +71,7 @@ void Print(Node head) {
     return node;
 }
 ```
+---
 > ### Tree
 *  Print Tree:Preorder Traversal
 ```{.java}
@@ -101,6 +103,7 @@ void inOrder(Node root) {
         inOrder(root.right);
 }
 ```
+---
 > ### Stack
 * Maximum Element
   * You have an empty sequence, and you will be given  queries. Each query is one of these three types:
@@ -125,6 +128,7 @@ void inOrder(Node root) {
   * while문의 사용이 헷갈렸으니 유의.
   * 시간복잡도 : (스택 3개의 값 입력) log(n) + (같을때 까지 비교하기 위한 while문) log(n) = log(n)
   * Link: https://github.com/seobyoungjun/seoCoding/blob/master/DataStructures/Stacks/src/EqualStacks.java
+---
 > ### Queue
 * Queue Using Two Stacks
   * FIFO방식으로 3가지의 쿼리문으로 실행시키는 알고리즘
@@ -138,6 +142,7 @@ void inOrder(Node root) {
   * 'X'는 지니갈 수 없는 성, '.'은 지나갈 수 있는 성으로 2차원 배열에서 시작점에서 목표점까지 최소 몇번의 과정으로 갈 수 있는지를 구하는 알고리즘
   * 재귀함수로 돌려서 구하려고 했지만 실패...
   * Link: https://github.com/seobyoungjun/seoCoding/blob/master/DataStructures/Queues/src/CastleOnTheGrid.java
+---
 > ### Heap
 * QHEAP1
   ```
