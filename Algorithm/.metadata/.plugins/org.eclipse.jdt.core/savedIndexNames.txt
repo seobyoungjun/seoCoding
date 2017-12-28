@@ -1,0 +1,3 @@
+INDEX VERSION 1.129+C:\Users\sbj83\seoCoding\Algorithm\.metadata\.plugins\org.eclipse.jdt.core
+2178987511.index
+3267273842.index

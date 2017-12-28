@@ -1,0 +1,9 @@
+
+public class Contacts {
+	public static void main(String[] args) {
+		String a = "hackerrank";
+		if(a.contains("hak")){
+			System.out.println("true");
+		}
+	}
+}

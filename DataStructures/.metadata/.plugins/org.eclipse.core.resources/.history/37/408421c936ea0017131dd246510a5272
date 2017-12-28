@@ -1,0 +1,31 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Scanner;
+
+public class Contacts {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int N = in.nextInt();
+		
+		HashMap<Integer, String> contacts = new HashMap<>();
+		for(int i=0; i<N; i++){
+			String type = in.next();
+			switch(type){
+			case "add":
+				String contact = in.next();
+				contacts.put(i, contact);
+				break;
+			case "find":
+				String find = in.next();
+				int count = 0;
+				for(int j=0; j<contacts.size(); j++){
+					if(contacts.get(j).contains(find))
+						count++;
+				}
+				System.out.println(count);
+				break;
+			}
+		}
+	}
+}
