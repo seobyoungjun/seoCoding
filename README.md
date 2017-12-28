@@ -165,8 +165,7 @@ void inOrder(Node root) {
 > ### Trie
 * Contacts(Medium 67.24%)
   ```
-   add name, where  is a string denoting a contact name. This must store  as a new contact in the application.
-find partial, where  is a string denoting a partial name to search the application for. It must count the number of contacts starting with  and print the count on a new line.
+   add name, where  is a string denoting a contact name. This must store  as a new contact in the application.find partial, where  is a string denoting a partial name to search the application for. It must count the number of contacts starting with  and print the count on a new line.
   ```
   * 시간 오류 발생..(ArrayList로 String.contains(find)로 list전부 찾아서 일치하면 count값 증가)
   * HashMap을 사용하면 ArrayList보다 접근 시간이 훨씬 빨라진다.
