@@ -289,3 +289,20 @@ void inOrder(Node root) {
   * x1+=v1 , x2+=v2를 해가면서 같을때까지 while문 돌림
   * 시간복잡도: (x1, x2를 N번만큼 더한다)log(n)
   * Link: https://github.com/seobyoungjun/seoCoding/blob/master/Algorithm/Implementation/src/Kangaroo.java
+> ### Sorting
+* **Big Sorting(Easy 63.73%)**
+  * 숫자가 Integer값의 범위를 넘어가는 숫자를 포함한 배열의 정렬을 하는 알고리즘
+  * 해결법 :
+  ```
+   1. Arrays.sort를 이용한다.
+   2. Comparator의 인터페이스 선언을 통해 compare함수를 재정의한다.
+   3. 기준 a, 비교 b 일때 a가 크면 1반환, b가 크면 -1반환, a==b이면 0반환
+   4. Stirng a, String b를 비교할때 a와 b의 String의 길이로 먼저 판별.
+   5. String의 길이가 같다면 for문을 돌아 0인덱스부터 (int)charAt(i)를 통해 크면 1, 작으면 -1 반환.
+   6. for문을 빠져나온다면 같다는 의미로 return 0을 반환.
+  ```
+  * 시간복잡도 : (정렬)log(n) * (String비교)log(n) = log(n^2)
+
+* **Insertion Sort - Part1, Part2(Easy 86.71%)(Easy 96.84%) && Correctness and the Loop Invariant(Easy 98.59%) && Running Time of Algorithms(Easy 96.73%)**
+  * 삽입정렬 알고리즘 구현하기.
+  * ![Image of Insertion Algorithm](Insertion-sort-example-300px.gif) 

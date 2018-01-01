@@ -8,7 +8,6 @@
 <fullyQualifiedTypeName name="BalancedBrackets.cStack"/>
 <fullyQualifiedTypeName name="QueueUsingTwoStacks.sQueue"/>
 <fullyQualifiedTypeName name="QHEAP1.heap"/>
-<fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="java.util.Collections"/>
 <fullyQualifiedTypeName name="java.util.PriorityQueue"/>
@@ -16,4 +15,6 @@
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="java.util.HashSet"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="java.util.TreeSet"/>
 </qualifiedTypeNameHistroy>

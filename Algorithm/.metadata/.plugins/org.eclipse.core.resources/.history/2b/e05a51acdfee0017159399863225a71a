@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class InsertionSort1 {
+	static void insertionSort1(int n, int[] arr) {
+        // Complete this function
+        for(int i = arr.length-1; i>0; i--){
+            int right = arr[i];
+            
+            for(int j=i; j>0; j--){
+                if(right < arr[j-1]){
+                    arr[j] = arr[j-1];
+                    for(int z=0; z<n; z++){
+                        System.out.printf("%d ",arr[z]);
+                    }
+                    System.out.println();
+                }else{
+                    arr[j-1] = right;
+                    break;
+                }
+            }
+        }
+        for(int z=0; z<n; z++){
+            System.out.printf("%d ",arr[z]);
+        }
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int[] arr = new int[n];
+        for(int arr_i = 0; arr_i < n; arr_i++){
+            arr[arr_i] = in.nextInt();
+        }
+        insertionSort1(n, arr);
+        in.close();
+    }
+}
