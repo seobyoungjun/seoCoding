@@ -306,7 +306,7 @@ void inOrder(Node root) {
 
 * **Insertion Sort - Part1, Part2(Easy 86.71%)(Easy 96.84%) && Correctness and the Loop Invariant(Easy 98.59%) && Running Time of Algorithms(Easy 96.73%)**
   * 삽입정렬 알고리즘 구현하기.
-  * ![Image of Insertion Algorithm](Insertion-sort-example-300px.gif) 
+   ![Image of Insertion Algorithm](Insertion-sort-example-300px.gif) 
   * Link: https://github.com/seobyoungjun/seoCoding/blob/master/Algorithm/Sorting/src/InsertionSort1.java
   * Link: https://github.com/seobyoungjun/seoCoding/blob/master/Algorithm/Sorting/src/InsertionSort2.java
   * Link: https://github.com/seobyoungjun/seoCoding/blob/master/Algorithm/Sorting/src/CorrectnessAndTheLoopInvariant.java
