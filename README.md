@@ -311,3 +311,32 @@ void inOrder(Node root) {
   * Link: https://github.com/seobyoungjun/seoCoding/blob/master/Algorithm/Sorting/src/InsertionSort2.java
   * Link: https://github.com/seobyoungjun/seoCoding/blob/master/Algorithm/Sorting/src/CorrectnessAndTheLoopInvariant.java
   * Link: https://github.com/seobyoungjun/seoCoding/blob/master/Algorithm/Sorting/src/RunningTimeOfAlgorithms.java
+> ### Search
+* **Ice Cream Parlor(Easy 91.62%)**
+  * n개의 배열을 가지는 n개의 아이스크림이 있다.
+  * 가격 m값에 맞춰 지는 2개의 아이스크림의 작은 Index값과 큰 Index값을 출력해라.
+  * 해결책 : x -> 1~N-1까지 for문. y -> x+1 ~ N까지 sub for문.
+  * 시간복잡도 : log(n^2)
+  * Link: 
+* **Missing Number(Easy 83.95%)
+  * 숫자배열 2개를 입력받는다.
+  * 나중에 입력받는 숫자배열이 더 길이가 길다.
+  * 2개의 배열을 비교하여 잃어버린 숫자를 출력하는 알고리즘.
+  * Hint : 1 <= x <= 10^4 , Xmax - Xmin <= 100
+  * 즉, count라는 10001배열을 선언하여 arr과 brr 두개의 배열에 각 값에 count를 --,++ 해준다.
+  * arr[i] 값에 해당하는 count[arr[i]]-- 해주면 해당되는 값의 인덱스에 --가 될 것이다.
+  * brr[i] 값에 해당하는 count[brr[i]]++ 해주면 잃어버린 숫자들만 0보다 큰 값으로 존재할 것이므로 이부분만 출력해주면됨.
+  * 시간복잡도 : (arr 값에 해당하는 count Index증가)log(n) + (brr 값에 해당하는 count Index증가)log(n) + (count 검색)log(n) = log(n)
+  * Link: 
+* **Sherlock and Array(Easy 78.28%)
+  * Index i를 기점으로 왼쪽과 오른쪽의 값들의 합이 같으면 "YES" 아니면 "NO"를 출력.
+  * 해결책
+  ```
+   1. 왼쪽기준 인덱스 : i  / 오른쪽기준 인덱스 : j
+   2. sum변수 선언 및 0으로 초기화
+   3. sum이 0보다 크거나 같으면 sum+=a[i]; i++;
+   4. sum이 0보다 작으면 sum-=[aj]; j--;
+   5. 이 과정을 while문으로 i와 j가 같을때까지 진행한다.
+  ```
+  * 시간복잡도 : log(n)
+  * Link:  
