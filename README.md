@@ -317,7 +317,7 @@ void inOrder(Node root) {
   * 가격 m값에 맞춰 지는 2개의 아이스크림의 작은 Index값과 큰 Index값을 출력해라.
   * 해결책 : x -> 1~N-1까지 for문. y -> x+1 ~ N까지 sub for문.
   * 시간복잡도 : log(n^2)
-  * Link: 
+  * Link: https://github.com/seobyoungjun/seoCoding/blob/master/Algorithm/Search/src/IceCreamParlor.java
 * **Missing Number(Easy 83.95%)**
   * 숫자배열 2개를 입력받는다.
   * 나중에 입력받는 숫자배열이 더 길이가 길다.
@@ -327,7 +327,7 @@ void inOrder(Node root) {
   * arr[i] 값에 해당하는 count[arr[i]]-- 해주면 해당되는 값의 인덱스에 --가 될 것이다.
   * brr[i] 값에 해당하는 count[brr[i]]++ 해주면 잃어버린 숫자들만 0보다 큰 값으로 존재할 것이므로 이부분만 출력해주면됨.
   * 시간복잡도 : (arr 값에 해당하는 count Index증가)log(n) + (brr 값에 해당하는 count Index증가)log(n) + (count 검색)log(n) = log(n)
-  * Link: 
+  * Link: https://github.com/seobyoungjun/seoCoding/blob/master/Algorithm/Search/src/MissingNumbers.java
 * **Sherlock and Array(Easy 78.28%)**
   * Index i를 기점으로 왼쪽과 오른쪽의 값들의 합이 같으면 "YES" 아니면 "NO"를 출력.
   * 해결책
@@ -339,4 +339,4 @@ void inOrder(Node root) {
    5. 이 과정을 while문으로 i와 j가 같을때까지 진행한다.
   ```
   * 시간복잡도 : log(n)
-  * Link:  
+  * Link: https://github.com/seobyoungjun/seoCoding/blob/master/Algorithm/Search/src/SherlockAndArray.java
