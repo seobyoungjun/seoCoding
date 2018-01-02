@@ -318,7 +318,7 @@ void inOrder(Node root) {
   * 해결책 : x -> 1~N-1까지 for문. y -> x+1 ~ N까지 sub for문.
   * 시간복잡도 : log(n^2)
   * Link: 
-* **Missing Number(Easy 83.95%)
+* **Missing Number(Easy 83.95%)**
   * 숫자배열 2개를 입력받는다.
   * 나중에 입력받는 숫자배열이 더 길이가 길다.
   * 2개의 배열을 비교하여 잃어버린 숫자를 출력하는 알고리즘.
@@ -328,7 +328,7 @@ void inOrder(Node root) {
   * brr[i] 값에 해당하는 count[brr[i]]++ 해주면 잃어버린 숫자들만 0보다 큰 값으로 존재할 것이므로 이부분만 출력해주면됨.
   * 시간복잡도 : (arr 값에 해당하는 count Index증가)log(n) + (brr 값에 해당하는 count Index증가)log(n) + (count 검색)log(n) = log(n)
   * Link: 
-* **Sherlock and Array(Easy 78.28%)
+* **Sherlock and Array(Easy 78.28%)**
   * Index i를 기점으로 왼쪽과 오른쪽의 값들의 합이 같으면 "YES" 아니면 "NO"를 출력.
   * 해결책
   ```

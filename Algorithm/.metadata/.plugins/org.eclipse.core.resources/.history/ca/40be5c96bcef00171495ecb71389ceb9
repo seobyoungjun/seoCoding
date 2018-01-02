@@ -1,5 +1,4 @@
 //https://www.hackerrank.com/challenges/sherlock-and-array/problem
-
 import java.util.Scanner;
 
 public class SherlockAndArray {
