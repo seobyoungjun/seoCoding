@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class BreadthFirstSearch_ShortestReach {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int q = in.nextInt();
+		for (int a0 = 0; a0 < q; a0++) {
+			int n = in.nextInt();
+
+			int[][] board = new int[n + 1][n + 1];
+
+			int m = in.nextInt();
+			for (int a1 = 0; a1 < m; a1++) {
+				int u = in.nextInt();
+				int v = in.nextInt();
+				if(board[u][v] == 0 && board[v][u] == 0){
+					board[u][v] = 1;
+					board[v][u] = 1;
+				}
+				for(int i=1; i<n+1; i++){
+					if(u != i && v != i && board[u][i] > 0 && board[v][i] != 1){
+						int count = board[u][i];
+						board[v][i] = count+1;
+						board[i][v] = count+1;
+					}
+				}
+			}
+			int s = in.nextInt();
+			
+			for (int i = 1; i < n + 1; i++)
+				if (s != i) {
+					if(board[s][i] > 0){
+						System.out.printf("%d ", board[s][i]*6);
+					}else{
+						System.out.printf("%d ", -1);
+					}
+				}
+			System.out.println();
+			
+			
+		}
+		in.close();
+	}
+
+}
